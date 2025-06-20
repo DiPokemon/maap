@@ -319,3 +319,8 @@ function show_svg_in_media_library( $response ) {
 
 	return $response;
 };
+
+
+add_filter( 'excerpt_length', function(){
+	return 20;
+} );
