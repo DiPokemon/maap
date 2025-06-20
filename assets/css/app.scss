@@ -1669,6 +1669,33 @@ textarea {
 }
 
 .main{
+  .buttons{
+    padding: 20px 0px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+    .main_button-item{
+      border: 1px solid darken(#dddfe3, 50);
+      background-color: darken( #dddfe3, 50);
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 16px;
+      display: flex;
+      min-width: 300px;
+      justify-content: center;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: ease 0.3s;
+
+        &:hover{
+          background-color: #fff;
+          color: #000;
+          transition: ease 0.3s;
+        }
+    }
+  }
   .main__part--calendar{
     margin-top: 30px;
     width: 30%;
@@ -1685,6 +1712,29 @@ textarea {
       h3{
         font-size: 18px;
         margin: 0;
+      }
+    }
+  }
+}
+
+@media(max-width: 991px){
+  .main{
+    .buttons{
+      .main_button-item{        
+        max-width: 290px;
+        min-width: unset;
+      }
+    }
+  }
+}
+
+@media(max-width: 768px){
+  .main{
+    .buttons{
+      flex-direction: column;
+      .main_button-item{        
+        max-width: unset;
+        width: 100%;
       }
     }
   }

@@ -11,12 +11,10 @@
 			<section class="main">
 				<?php
 					global $post;
-
 					$query = new WP_Query( [
 						'posts_per_page' => 1, // Количество постов выводить (-1 = все посты).
 						'post_type' => 'calendar'
 					] );
-
 					if ( $query->have_posts() ) {
 						while ( $query->have_posts() ) {
 							$query->the_post(); 
@@ -35,6 +33,12 @@
 
 					wp_reset_postdata(); // Сбрасываем $post
 				?>
+
+				<div class="buttons">
+					<a href="/join" class="main_button-item">Вступить</a>
+					<a href="tel:+111111" class="main_button-item">Участвовать в мероприятии</a>
+					<a href="#" class="main_button-item">Подписаться на новости</a>
+				</div>
 
 				<div class="main__wrap">
 					<?php the_content(); ?>
@@ -129,8 +133,6 @@
 							?>
 						</div>
 					</div>
-
-
 				</div>
 			</section>
 
