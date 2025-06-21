@@ -41,7 +41,7 @@
 				</div>
 
 				<div class="main__wrap">
-					<?php the_content(); ?>
+					<?php //the_content(); ?>
 
 					<div class="main__part main__part--news news" style="margin-top: 30px;">
 						<h2>Новости</h2>
