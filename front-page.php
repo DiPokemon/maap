@@ -36,8 +36,8 @@
 
 				<div class="buttons">
 					<a href="/join" class="main_button-item">Вступить</a>
-					<a href="tel:+111111" class="main_button-item">Участвовать в мероприятии</a>
-					<a href="#" class="main_button-item">Подписаться на новости</a>
+					<!-- <a href="tel:+111111" class="main_button-item">Участвовать в мероприятии</a>
+					<a href="#" class="main_button-item">Подписаться на новости</a> -->
 				</div>
 
 				<div class="main__wrap">
@@ -132,6 +132,7 @@
 								wp_reset_postdata(); // Сбрасываем $post
 							?>
 						</div>
+						<img class="victory_day" src="<?= get_template_directory_uri() ?>/assets/imgs/banner_80let.png" alt="День победы. 80 лет.">
 					</div>
 				</div>
 			</section>

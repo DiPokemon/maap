@@ -48,15 +48,15 @@ html {
 }
 
 body {
-  background-color: #fff;
+  background: url(../imgs/bg-fon-red.jpg) center top repeat;
   color: #494a52;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: Inter, sans-serif;
   font-size: 16px;
   line-height: 1.4;
@@ -723,6 +723,7 @@ textarea {
 
 .header {
   padding: 60px 0 16px;
+  background: #fff;
 }
 
 .header__wrap {
@@ -2959,6 +2960,7 @@ textarea {
 }
 .footer {
   margin-top: auto;
+  background: #fff;
 }
 
 .footer__wrap {
