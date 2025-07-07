@@ -2083,7 +2083,7 @@ textarea {
 }
 
 .calendar__item h3 {
-  color: #828d9e;
+  color: #fff;
 }
 
 .calendar__item:not(:last-of-type) {
