@@ -324,3 +324,16 @@ function show_svg_in_media_library( $response ) {
 add_filter( 'excerpt_length', function(){
 	return 20;
 } );
+
+
+// Отключаем автоматическое преобразование кириллических доменов в Punycode
+add_filter('wp_insert_post_data', function($data, $postarr) {
+    $data['post_content'] = preg_replace_callback(
+        '/https?:\/\/[^\s]+/',
+        function($matches) {
+            return str_replace(['xn--'], '', $matches[0]); // Убираем Punycode
+        },
+        $data['post_content']
+    );
+    return $data;
+}, 10, 2);
