@@ -804,6 +804,13 @@ textarea {
 .header__contact {
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header__contact-item {
@@ -998,6 +1005,7 @@ textarea {
   -webkit-transition: background-color 0.4s ease-out, color 0.4s ease-out;
   transition: background-color 0.4s ease-out, color 0.4s ease-out;
   z-index: 1;
+  color: #0f3057;
 }
 
 .header__navbar-list > li > a::after,
@@ -1638,6 +1646,7 @@ textarea {
           flex-direction: column;
   border: 1px solid #dddfe3;
   border-radius: 10px;
+  background: #fff;
 }
 .news__list-item .news__list-item-info {
   -webkit-box-align: center;

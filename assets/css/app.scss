@@ -746,6 +746,8 @@ textarea {
 .header__contact {
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  flex-direction: row;
+  display: flex;
 }
 .header__contact-item {
   -webkit-box-align: center;
@@ -938,6 +940,7 @@ textarea {
   -o-transition: background-color 0.4s ease-out, color 0.4s ease-out;
   transition: background-color 0.4s ease-out, color 0.4s ease-out;
   z-index: 1;
+  color: #0f3057;
 }
 .header__navbar-list > li > a::after,
 .header__navbar-list > li > a::before {
@@ -1579,6 +1582,7 @@ textarea {
     flex-direction: column;   
     border: 1px solid #dddfe3;
     border-radius: 10px;
+    background: #fff;
 
     .news__list-item-info {      
       align-items: center;      
