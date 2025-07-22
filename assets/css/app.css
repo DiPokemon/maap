@@ -1456,6 +1456,7 @@ textarea {
 .main__preview-content .news__title:first-child,
 .main__preview-content h4:first-child {
   margin-bottom: 0;
+  color: #0f3057;
 }
 
 .main__preview-content .news__title:not(:last-child),
@@ -1465,6 +1466,7 @@ textarea {
 
 .main__preview-content p {
   font-size: 13px;
+  color: #0f3057;
 }
 
 .main__wrap {
