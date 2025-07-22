@@ -35,8 +35,8 @@
 				?>
 
 				<div class="buttons">
-					<a href="/join" class="main_button-item">Вступить</a>
-					<!-- <a href="tel:+111111" class="main_button-item">Участвовать в мероприятии</a>
+					<!--<a href="/join" class="main_button-item">Вступить</a>
+					 <a href="tel:+111111" class="main_button-item">Участвовать в мероприятии</a>
 					<a href="#" class="main_button-item">Подписаться на новости</a> -->
 				</div>
 

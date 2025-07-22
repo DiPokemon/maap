@@ -34,7 +34,7 @@
 ::before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  color: currentColor;
+  color: #fff;
   list-style: none;
   margin: 0;
   outline: 0;
@@ -54,7 +54,7 @@ html {
   height: 100%;
 }
 body {
-  background: url(../imgs/bg-fon-red.jpg) center top repeat;
+  background: url(../imgs/bg-fon-light.jpg) center top repeat;
   color: #494a52;  
   display: flex;
   flex-direction: column;
@@ -128,18 +128,22 @@ textarea {
   flex-grow: 1;
   padding: 24px 0 30px;
 }
-.wrapper--main .news__title,
+
 .wrapper--main h1,
 .wrapper--main h2,
 .wrapper--main h3,
 .wrapper--main h4,
 .wrapper--main h5,
 .wrapper--main h6 {
-  color: #242a33;
+  color: #fff;
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
 }
+.wrapper--main .news__title{
+  color:#0f3057
+}
+
 .wrapper--main .news__title:first-child,
 .wrapper--main .news__title:not(:last-child),
 .wrapper--main h1:first-child,
@@ -1536,7 +1540,7 @@ textarea {
  
 }
 .news__item-title {
-  color: #828d9e;
+  color: #fff;
   display: block;
   font-size: 18px;
   font-weight: 700;
@@ -1552,7 +1556,7 @@ textarea {
   color: #0f3057;
 }
 .news__item-date {
-  color: #828d9e;
+  color: #fff;
   display: block;
   margin-bottom: 16px;
 }
@@ -1566,6 +1570,11 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+}
+
+
+.news__content p{
+  color: #0f3057
 }
 
 @media(max-width: 767px){

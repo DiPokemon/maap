@@ -25,7 +25,7 @@
 ::before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  color: currentColor;
+  color: #fff;
   list-style: none;
   margin: 0;
   outline: 0;
@@ -48,7 +48,7 @@ html {
 }
 
 body {
-  background: url(../imgs/bg-fon-red.jpg) center top repeat;
+  background: url(../imgs/bg-fon-light.jpg) center top repeat;
   color: #494a52;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,17 +134,20 @@ textarea {
   padding: 24px 0 30px;
 }
 
-.wrapper--main .news__title,
 .wrapper--main h1,
 .wrapper--main h2,
 .wrapper--main h3,
 .wrapper--main h4,
 .wrapper--main h5,
 .wrapper--main h6 {
-  color: #242a33;
+  color: #fff;
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
+}
+
+.wrapper--main .news__title {
+  color: #0f3057;
 }
 
 .wrapper--main .news__title:first-child,
@@ -792,6 +795,11 @@ textarea {
 }
 
 .header__search-input:not(:-ms-input-placeholder) ~ .header__search-clear {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.header__search-input:not(:-moz-placeholder) ~ .header__search-clear {
   opacity: 1;
   pointer-events: all;
 }
@@ -1596,7 +1604,7 @@ textarea {
   }
 }
 .news__item-title {
-  color: #828d9e;
+  color: #fff;
   display: block;
   font-size: 18px;
   font-weight: 700;
@@ -1613,7 +1621,7 @@ textarea {
 }
 
 .news__item-date {
-  color: #828d9e;
+  color: #fff;
   display: block;
   margin-bottom: 16px;
 }
@@ -1629,6 +1637,10 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+}
+
+.news__content p {
+  color: #0f3057;
 }
 
 @media (max-width: 767px) {
@@ -1673,7 +1685,7 @@ textarea {
   color: #fff;
   text-transform: uppercase;
   font-size: 14px;
-  background-color: #575d6a;
+  background-color: rgb(87.1612903226, 93.3870967742, 105.8387096774);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1751,8 +1763,8 @@ textarea {
           justify-content: center;
 }
 .main .buttons .main_button-item {
-  border: 1px solid #575d6a;
-  background-color: #575d6a;
+  border: 1px solid rgb(87.1612903226, 93.3870967742, 105.8387096774);
+  background-color: rgb(87.1612903226, 93.3870967742, 105.8387096774);
   border-radius: 5px;
   padding: 10px;
   font-size: 16px;
@@ -2308,6 +2320,11 @@ textarea {
   padding-top: 24px;
 }
 
+.form__input:not(:-moz-placeholder) {
+  padding-bottom: 8px;
+  padding-top: 24px;
+}
+
 .form__input:focus-visible,
 .form__input:not(:placeholder-shown) {
   padding-bottom: 8px;
@@ -2319,6 +2336,10 @@ textarea {
 }
 
 .form__input--is-error:not(:-ms-input-placeholder) {
+  border-color: #d91d0b;
+}
+
+.form__input--is-error:not(:-moz-placeholder) {
   border-color: #d91d0b;
 }
 
@@ -2361,6 +2382,13 @@ textarea {
   top: 13px;
 }
 
+.form__input:not(:-moz-placeholder) + .form__label {
+  color: #828d9e;
+  font-size: 10px;
+  line-height: 12px;
+  top: 13px;
+}
+
 .form__input:focus-visible + .form__label,
 .form__input:not(:placeholder-shown) + .form__label {
   color: #828d9e;
@@ -2387,6 +2415,18 @@ textarea {
   width: calc(100% - 72px);
 }
 
+.form__input--textarea:not(:-moz-placeholder) + .form__label {
+  background-color: #fff;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 24px;
+  width: calc(100% - 72px);
+}
+
 .form__input--textarea:focus-visible + .form__label,
 .form__input--textarea:not(:placeholder-shown) + .form__label {
   background-color: #fff;
@@ -2405,6 +2445,10 @@ textarea {
 }
 
 .form__input--is-error:not(:-ms-input-placeholder) + .form__label {
+  color: #d91d0b;
+}
+
+.form__input--is-error:not(:-moz-placeholder) + .form__label {
   color: #d91d0b;
 }
 
@@ -2661,6 +2705,10 @@ textarea {
     padding-bottom: 0.4166666667vw;
     padding-top: 1.25vw;
   }
+  .form__input:not(:-moz-placeholder) {
+    padding-bottom: 0.4166666667vw;
+    padding-top: 1.25vw;
+  }
   .form__input:focus-visible,
   .form__input:not(:placeholder-shown) {
     padding-bottom: 0.4166666667vw;
@@ -2684,6 +2732,11 @@ textarea {
     line-height: 0.625vw;
     top: 0.6770833333vw;
   }
+  .form__input:not(:-moz-placeholder) + .form__label {
+    font-size: 0.5208333333vw;
+    line-height: 0.625vw;
+    top: 0.6770833333vw;
+  }
   .form__input:focus-visible + .form__label,
   .form__input:not(:placeholder-shown) + .form__label {
     font-size: 0.5208333333vw;
@@ -2695,6 +2748,10 @@ textarea {
     width: calc(100% - 3.75vw);
   }
   .form__input--textarea:not(:-ms-input-placeholder) + .form__label {
+    height: 1.25vw;
+    width: calc(100% - 3.75vw);
+  }
+  .form__input--textarea:not(:-moz-placeholder) + .form__label {
     height: 1.25vw;
     width: calc(100% - 3.75vw);
   }
