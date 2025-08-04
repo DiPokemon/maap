@@ -15,7 +15,7 @@
 				<div class="form__block">
 					<div class="form__part form__part--name">
 						<input class="form__input" name="maap-name" placeholder="Имя" required>
-						<label class="el-decor form__label">Имя</label>
+						<label class="el-decor form__label">Имя Фамилия</label>
 						<svg class="el-decor form__icon form__icon--stroke" aria-hidden="true"><use xlink:href="#user" x="0" y="0"></use></svg>
 					</div>
 	

@@ -38,7 +38,7 @@ if ( $response_keys['success'] && $response_keys['score'] >= 0.5 ) {
 	# Формирование сообщения:
 	if ( !empty( $_POST['maap-name'] ) && !empty( $_POST['maap-phone'] ) ) {
 
-		$message .= '<b>Имя: </b>'. $_POST['maap-name'] .'<br>';
+		$message .= '<b>Имя Фамилия: </b>'. $_POST['maap-name'] .'<br>';
 		if ( !empty( $_POST['maap-email'] ) ) $message .= '<b>Почта: </b>'. $_POST['maap-email'] .'<br>';
 		$message .= '<b>Телефон: </b>'. $_POST['maap-phone'] .'<br>';
 		if ( !empty( $_POST['maap-text'] ) ) $message .= '<b>Сообщение: </b>'. $_POST['maap-text'] .'<br>';

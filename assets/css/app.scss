@@ -1585,7 +1585,14 @@ textarea {
   }
 }
 
- 
+.single-post .wrapper__content * {
+    color: #000;
+}
+
+.single-post .wrapper__content h1,
+.single-post .wrapper__content .news__item-date {
+  color: #fff
+}
 
 
 .news__list-item{

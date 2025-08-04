@@ -2,7 +2,7 @@
 
 	<main class="wrapper wrapper--main">
 		<div class="wrapper__content">
-			<h2><?php the_title(); ?></h2>
+			<h1><?php the_title(); ?></h1>
 
 			<time class="news__item-date"><?php the_time( 'j F Y' ); ?></time>
 
