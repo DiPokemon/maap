@@ -8,6 +8,7 @@
 
 	<main class="wrapper wrapper--main">
 		<div class="wrapper__content">
+			
 			<h1><?php the_title(); ?></h1>
 
 			<section class="calendar">
