@@ -1659,6 +1659,10 @@ textarea {
   color: #fff;
 }
 
+.single-post .wrapper__content a {
+  text-decoration: underline;
+}
+
 .news__list-item {
   display: -webkit-box;
   display: -ms-flexbox;
