@@ -1661,6 +1661,7 @@ textarea {
 
 .single-post .wrapper--main .wrapper__content a {
   text-decoration: underline;
+  color: #000;
 }
 
 .news__list-item {
