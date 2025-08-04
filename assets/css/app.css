@@ -1650,16 +1650,20 @@ textarea {
     grid-template-columns: 1fr;
   }
 }
-.single-post .wrapper--main .wrapper__content * {
+.single-post .wrapper--main .wrapper__content *,
+.single-calendar .wrapper--main .wrapper__content * {
   color: #000;
 }
 
 .single-post .wrapper--main .wrapper__content h1,
-.single-post .wrapper--main .wrapper__content .news__item-date {
+.single-post .wrapper--main .wrapper__content .news__item-date,
+.single-calendar .wrapper--main .wrapper__content h1,
+.single-calendar .wrapper--main .wrapper__content .news__item-date {
   color: #fff;
 }
 
-.single-post .wrapper--main .wrapper__content a {
+.single-post .wrapper--main .wrapper__content a,
+.single-calendar .wrapper--main .wrapper__content a {
   text-decoration: underline;
   color: #000;
 }
