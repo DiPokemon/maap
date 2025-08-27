@@ -1589,6 +1589,13 @@ textarea {
 .single-calendar .wrapper--main .wrapper__content .post_content{
     background-color: #fff;
     color: #000;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.single-post .wrapper--main .wrapper__content .post_content *,
+.single-calendar .wrapper--main .wrapper__content .post_content *{
+    color: #000;
 }
 
 
