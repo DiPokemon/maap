@@ -1663,6 +1663,22 @@ textarea {
   color: #000;
 }
 
+.wp-caption.alignleft {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.post_content {
+  overflow: hidden; /* Создает новый блоковый контекст */
+}
+
+/* Или альтернативный метод очистки float */
+.post_content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .single-post .wrapper--main .wrapper__content h1,
 .single-post .wrapper--main .wrapper__content .news__item-date,
 .single-calendar .wrapper--main .wrapper__content h1,
