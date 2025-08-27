@@ -7,10 +7,12 @@
 			<time class="news__item-date"><?php the_time( 'j F Y' ); ?></time>
 
 			<?php
-				if ( has_post_thumbnail() ) the_post_thumbnail( 'post-thumbnail', array( 'class' => 'wrapper__bg-image news__image' ) );
-
-				the_content();
+				if ( has_post_thumbnail() ) the_post_thumbnail( 'post-thumbnail', array( 'class' => 'wrapper__bg-image news__image' ) );				
 			?>
+
+			<div class="post_content">
+				<?php the_content(); ?>
+			</div>
 		</div>
 	</main>
 

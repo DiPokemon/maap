@@ -1585,10 +1585,13 @@ textarea {
   }
 }
 
-.single-post .wrapper--main .wrapper__content *,
-.single-calendar .wrapper--main .wrapper__content *{
+.single-post .wrapper--main .wrapper__content .post_content,
+.single-calendar .wrapper--main .wrapper__content .post_content{
+    background-color: #fff;
     color: #000;
 }
+
+
 
 .single-post .wrapper--main .wrapper__content h1,
 .single-post .wrapper--main .wrapper__content .news__item-date,
